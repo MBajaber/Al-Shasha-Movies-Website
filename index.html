@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Movies Website"/>
+    <title>AL-Shashah Movies Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap">
+  </head>
+  <body>
+
+    <!-- Start Loading -->
+
+    <div class="loader">
+      <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+    </div>
+
+    <!-- End Loading -->
+
+    <!-- Start Header  -->
+    <header>
+      <!-- Start Top Header  -->
+      <div class="top-header cover">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start mb-2 mb-sm-0 mt-3 mt-sm-0">
+              <div class="user">
+                <a href="#" class="btn login text-center mb-sm-2 mb-md-0 d-sm-block d-md-inline-block">الدخول</a>
+              <a href="#" class="btn rigister text-center mr-3 mr-sm-0">إنشاء حساب</a>
+              </div>
+            </div>
+            <div class="col-sm-6 d-flex justify-content-center justify-content-sm-end mb-4 mb-sm-0">
+              <form class="form form-inline">
+                <input type="search" class="form-control" placeholder="إبحث هنا">
+                <a href="#" class="btn default-search bg-danger trans">بحث</a>
+                <ion-icon class="search-outline" name="search-outline"></ion-icon>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Top Header  -->
+
+      <!-- Start Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark mynavbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <h2 class="h1 brand-text">الشاشة</h2>
+            <img src="img/logo/tv.png" class="logo" height="50" alt="logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+            <ion-icon class="btn-bar" name="stats-chart-outline"></ion-icon>
+          </button>
+          <div class="overlay-dark">
+            <div class="colse-btn trans">
+              <ion-icon class="close-icon" name="close-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse navbar-side" id="myNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link trans" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  افلام
+                </a>
+                <div class="dropdown-menu shadow rounded" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">افلام عربي</a>
+                  <a class="dropdown-item" href="#">افلام اجنبى</a>
+                  <a class="dropdown-item" href="#">افلام انيميشن</a>
+                  <a class="dropdown-item" href="#">افلام اسيوية</a>
+                  <a class="dropdown-item" href="#">افلام هندى</a>
+                  <a class="dropdown-item" href="#">افلام كلاسيكيه</a>
+                  <a class="dropdown-item" href="#">سلاسل الأفلام</a>
+                  <a class="dropdown-item" href="#">افلام تركية</a>
+                  <a class="dropdown-item" href="#">افلام مدبلجة</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle trans" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                افلام كرتون
+                </a>
+                <div class="dropdown-menu shadow rounded" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">افلام مدبلج</a>
+                  <a class="dropdown-item" href="#">افلام مترجمة</a>
+                  <a class="dropdown-item" href="#">كرتون mbc 3</a>
+                  <a class="dropdown-item" href="#">كرتون سبيس تون</a>
+                  <a class="dropdown-item" href="#">اغاني كرتون</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle trans" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  مسلسلات
+                </a>
+                <div class="dropdown-menu shadow rounded" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">مسلسلات اجنبي</a>
+                  <a class="dropdown-item" href="#">مسلسلات تركيه</a>
+                  <a class="dropdown-item" href="#">مسلسلات عربيه</a>
+                  <a class="dropdown-item" href="#">مسلسلات كرتون</a>
+                  <a class="dropdown-item" href="#">مسلسلات مدبلجة</a>
+                  <a class="dropdown-item" href="#">مسلسلات كوريه</a>
+                  <a class="dropdown-item" href="#">مسلسلات رمضان</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link trans" href="#">مسرحيات عربيه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link trans" href="#">اقسام اخرى</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link trans" href="#">اعلن معنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link trans" href="#">اتصل بنا</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </header>
+
+    <!-- End Header  -->
+
+    <!-- Start Slider  -->
+    <div class="slider overflow-hidden">
+      <div class="row">
+        <div class="col-md-4 d-none d-md-block">
+          <div class="image"></div>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <div class="carousel carousel-parent">
+            <div class="carousel">
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/x3HbbzHK5Mc">
+                <img src="img/slider-img/a9.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/vOUVVDWdXbo">
+                <img src="img/slider-img/a10.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/szby7ZHLnkA">
+                <img src="img/slider-img/a11.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/A05s7OM-8Oc">
+                <img src="img/slider-img/a12.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/NVYPYwHYeyc">
+                <img src="img/slider-img/a13.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/VhRErQhD23Y">
+                <img src="img/slider-img/a14.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/rBxcF-r9Ibs">
+                <img src="img/slider-img/a15.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/FEf412bSPLs">
+                <img src="img/slider-img/a16.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/BVZDhunTrYA">
+                <img src="img/slider-img/a17.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/dKeRIOA28Jk">
+                <img src="img/slider-img/a18.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/BfTYY_pac8o">
+                <img src="img/slider-img/a19.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/jKCj3XuPG8M">
+                <img src="img/slider-img/a20.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/QCfSeVCr7ng">
+                <img src="img/slider-img/a21.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/oxy8udgWRmo">
+                <img src="img/slider-img/a22.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/uWFVPgU23Lw">
+                <img src="img/slider-img/a23.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-trailer="https://www.youtube.com/embed/YsRzc5MnogI">
+                <img src="img/slider-img/a24.jpg" alt="">
+                <div class="reflect-image"></div>
+                <div class="icons trans d-flex align-items-center justify-content-center">
+                  <a href="#" class="play-icon rounded-circle trans" title="تشغيل"></a>
+                  <a href="#" class="read-more mr-2 rounded-circle trans" title="أقراء المزيد">
+                    <ion-icon class="link" name="link-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+
+    <!-- End Slider  -->
+
+    <!-- Start Popup  -->
+
+    <div class="popup">
+      <div class="window-box rounded">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="close-btn-popup rounded trans" title="إغلاق">
+          <ion-icon class="close-sharp" name="close-sharp"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Popup  -->
+
+    <!-- Start Movies categories -->
+
+    <div class="movies-categories d-none d-sm-block">
+      <div class="container">
+        <div class="owl-carousel owl-theme rounded">
+          <a href="#" class="item trans">
+            <img src="img/small-slider/a2.jpg" alt="" class="img-fluid">
+            <h4>افلام رعب</h4>
+          </a>
+          <a href="#" class="item trans">
+            <img src="img/small-slider/a3.jpg" alt="" class="img-fluid">
+            <h4 class="small-font">افلام الخيال العلمي</h4>
+          </a>
+          <a href="#" class="item trans">
+            <img src="img/small-slider/a4.jpg" alt="" class="img-fluid">
+            <h4>افلام كوميدية</h4>
+          </a>
+          <a href="#" class="item trans">
+            <img src="img/small-slider/a5.jpg" alt="" class="img-fluid">
+            <h4>افلام رومانسية</h4>
+          </a>
+          <a href="#" class="item trans">
+            <img src="img/small-slider/a7.jpg" alt="" class="img-fluid">
+            <h4>افلام دراما</h4>
+          </a>
+          <a href="#" class="item trans">
+            <img src="img/small-slider/a8.jpg" alt="" class="img-fluid">
+            <h4>افلام  حزينة</h4>
+          </a>
+          <a href="#" class="item trans">
+            <img src="img/small-slider/a9.jpg" alt="" class="img-fluid">
+            <h4>افلام  مغامرات</h4>
+          </a>
+          <a href="#" class="item trans">
+            <img src="img/small-slider/a10.jpg" alt="" class="img-fluid">
+            <h4>افلام حرب</h4>
+          </a>
+          <a href="#" class="item trans">
+            <img src="img/small-slider/a11.jpg" alt="" class="img-fluid">
+            <h4>افلام رياضة</h4>
+          </a>
+          <a href="#" class="item trans">
+            <img src="img/small-slider/a1.jpg" alt="" class="img-fluid">
+            <h4>افلام أسيوية</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Movies categories -->
+
+    <!-- Start Movies Cards -->
+
+    <div class="movies-cards mt-5 mt-sm-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>5.5</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">تدور أحداث الفيلم حول المحقق (أندريس دافيس)، والذي يدخل في مطاردة شرسة مع قتلة شرطيين، ذلك وبعد اكتشافهما لمؤامرة ضخمة، حيث يجد (دافيس) نفسه في مطاردة لا تنتهي، حينما تقرر السلطات غلق جميع جسور المدينة الـ21 لمنع دخول أو خروج أي شخص من جزيرة مانهاتن.
+                </p>
+              </div>
+              <div class="movie-title">
+                <h3> فيلم 21 Bridges</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>12606</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2019</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                  <span>فانتازيا</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>5.0</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">كتشف الطبيب الشهير جون دولتيل أنه يملك القدرة على الحديث مع الحيوانات، وهو يمنحه ما يمنحه إمكانيات وقدرات هائلة، ويكتشف هذه القدرات على الطبيعة في رحلة لا تُنسى.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مشاهدة فيلم Dolittle 2020 مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>12606</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2019</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                  <span>فانتازيا</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>5.0</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">روني وفيكرام شقيقان بينهما علاقة وثيقة، وتبدأ رحلتهما بمنطعف كبير، فيضطر فيكرام للسفر، وفي هذه الرحلة، يتعرض فيكرام للاختطاف، وعلى روني أن يتصدى ﻷي أحد يحاول إيذاء شقيقه.</p>
+              </div>
+              <div class="movie-title">
+                <h3>فيلم المتمرد 3 Baaghi 3 2020 مترجم اون لاين</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>14741</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2020</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                </li>
+                <li>DVD Sc</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div>
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>6.6</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">تدور أحداث مسلسل ابنة السفير حول قصة حب مستحيلة بين (ناري) ابنة السفير و (سنجار) ابن عامل بسيط في موغالا. (ناري) و (سنجار) وقعا في حب بعضهما منذ اللحظة التي تقابلا فيها عندما كانا طفلان. العاشقان يدركان انهما لن يستطيعا الاجتماع بسبب مواضيع عائلية فيقرران الهرب وترك كل شيء خلفهما. في اليوم الذي سيهربان فيه يحصل شيء غامض وتختفي (ناري) بشكل مفاجئ! بعد سنوات ستتغير حياة (سانجار) وعندما يستعد للزواج من فتاة اخرى تظهر (ناري) من جديد أمامه ومعها اسرار الماضي.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مسلسل ابنة السفير مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>18306</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2019</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>دراما</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="movie-page.html" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>7.1</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">يعود (بيرنت) - الذى أصبح مفتشا- للعمل مع زميله القديم (لوري) - الذي يعاني من اكتئاب مرحلة منتصف العمر، بعد ان يقوم مرتزق ألباني برصد جائزة مالية لمن يأتي برأس الثنائي انتقاما لأخيه الذي قتل علي يديهما.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مشاهدة فيلم Bad Boys for Life 2020 مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>58319</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2019</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اثارة</span>
+                  <span>اكشن</span>
+                  <span>كوميديا</span>
+                </li>
+                <li>720p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <div class="series-number">
+                    <strong>150</strong>
+                    <span>حلقة</span>
+                  </div>
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>5.5</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">“بوروتو” الجيل الجديد، والنينجا الصغار الجدد، فتانا الصغير “أوزوماكي بوروتو” ذي الشعر الأصفر كأبيه النينجا العظيم، ذاك الصغير بعنصريْ الريح والبرق وبعيون غامضة لا يدري كنهها بعد، والذي ورث ملامح أبيه “ناروتو” وحماسه وتهوّره، وبعض خجل وصفات أمه “هيوجا هيناتا”. “بوروتو” الأنمي الذي لم يتحمس له أحد وقيل أنّه سيكون مجرد مط وتطويل، لكنه فاجأ الجميع بأحداثه الساخنة منذ البداية، فبدايته حتى وإن بدت أكثر لطفًا و جمالًا من بدايات “ناروتو” نفسه، إلاّ أنّنا من الدقيقة الأولى نرى “بوروتو” يواجه “كاواكي”، تمامًا كما هو الحال في المانجا، مما يُظهر لنا لمحةً عما سيأتي في هذه الملحمة فيما بعد.</p>
+              </div>
+              <div class="movie-title">
+                <h3>انمي Boruto Naruto مترجم اون لاين</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>44047</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2020</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>كرتون</span>
+                  <span>اكشن</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>5.7</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">يبعث راي جاريسون بأعجوبة من الموت من خلال إحدى تقنيات النانو تكنولوجي، لكنه يعاني في المقابل من فقدان تام للذاكرة، ويحاول راي التواصل من جديد مع شخصيته الحقيقية التي كان عليها في الماضي بينما يكتشف أنه قد بات في حد ذاته بمثابة سلاح فتاك.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مشاهدة فيلم Bloodshot 2020 مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>628492</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2020</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                  <span>دراما</span>
+                  <span>خيال علمى</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <div class="series-number">
+                    <strong>2</strong>
+                    <span>حلقة</span>
+                  </div>
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>7.2</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">ضمن أحداث حقيقية هزت ضمير العالم في فترة عاصفة من التاريخ السعودي، يجد خالد الطيان هذه المرة نفسه في مأزق لا يخطر على البال.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مشاهدة مسلسل العاصوف موسم 2 حلقة 30</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>16972</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2019</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>رومانسى</span>
+                  <span>دراما</span>
+                  <span>عائلى</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>8.0</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">رزوان "رضوان" خان مسلم هندى يعانى من مرض التوحد "متلازمة أسبرجر". بعد وفاة أمه ينتقل الى الولايات المتحدة ليقيم عند اخيه زاكر. هناك يتعرف على فتاة هندوسية تدعى مانديرا مطلقة و لديها ابن من زواج سابق ليقع في غرامها</p>
+              </div>
+              <div class="movie-title">
+                <h3>فيلم My Name Is Khan 2010 مترجم اون لاين</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>714128</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2010</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اثارة</span>
+                  <span>دراما</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>720p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>6.1</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">في سعي جاد للنجاح في عالم الفنّ، يفكّر ممثل شابّ طموح في التخلّي عن المقهى الإيراني المحبوب من أهل المدينة والذي تديره عائلته لأجيال.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مشاهدة فيلم Maska 2020 مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>18560</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2019</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>كوميديا</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <div class="series-number">
+                    <strong>20</strong>
+                    <span>حلقة</span>
+                  </div>
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>8.2</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">جراح شاب مصاب بالتوحد ومتلازمة الموهوب يتم تعينيه في مستشفى كبير رغم عدم قدرته على التواصل مع باقي الأشخاص بشكل طبيعي فهل يتمكن فعلا من انقاذ حياة المرضى؟</p>
+              </div>
+              <div class="movie-title">
+                <h3>مسلسل The Good Doctor مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>12861</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2017</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                  <span>فانتازيا</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <div class="series-number">
+                    <strong>929</strong>
+                    <span>حلقة</span>
+                  </div>
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>8.7</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">يبدأ لوفي قبعة القش رحلته في البحار مع اصدقائه ليحقق حلمه وهو ان يكون ملك القراصنة ومن هناك تبدأ المشاكل والصراعات القوية تمنعه من التقدم الى الامام وهل سيحقق حلمه ؟</p>
+              </div>
+              <div class="movie-title">
+                <h3>إنمي One Piece مترجم اون لاين</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>9583</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2020</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                  <span>فانتازيا</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>7.1</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">دور أحداث الفيلم منذ زمن قديم في مملكة اسكتلندية عن الأميرة ” ميريدا ” التي تتحكم والدتها الملكة ” إلينور ” في كل ما تفعله ،فتريد الأميرة أن تغيّر مصيرها فيعود هذا بالمشاكل على المملكة بأسرها .</p>
+              </div>
+              <div class="movie-title">
+                <h3>فيلم Brave 2012 مدبلج اون لاين</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>2861</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2012</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                  <span>فانتازيا</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>6.8</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">يتناول العمل قصة كلب يعيش في البقعة الأخيرة التي تدب فيها الحياة على الأرض، وبينما يعاني من سوء المعاملة والوحدة الشديدة، يقابل رجل ليذهب معه في مغامرة وتنشأ علاقة بينما تغير حياتهما.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مشاهدة فيلم The Call of the Wild 2020 مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>27169</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2020</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اثارة</span>
+                  <span>عائلى</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>5.5</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">تدور أحداث الفيلم حول المحقق (أندريس دافيس)، والذي يدخل في مطاردة شرسة مع قتلة شرطيين، ذلك وبعد اكتشافهما لمؤامرة ضخمة، حيث يجد (دافيس) نفسه في مطاردة لا تنتهي، حينما تقرر السلطات غلق جميع جسور المدينة الـ21 لمنع دخول أو خروج أي شخص من جزيرة مانهاتن.
+                </p>
+              </div>
+              <div class="movie-title">
+                <h3> فيلم 21 Bridges</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>12606</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2019</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                  <span>فانتازيا</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>5.0</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">كتشف الطبيب الشهير جون دولتيل أنه يملك القدرة على الحديث مع الحيوانات، وهو يمنحه ما يمنحه إمكانيات وقدرات هائلة، ويكتشف هذه القدرات على الطبيعة في رحلة لا تُنسى.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مشاهدة فيلم Dolittle 2020 مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>12606</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2019</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                  <span>فانتازيا</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>5.0</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">روني وفيكرام شقيقان بينهما علاقة وثيقة، وتبدأ رحلتهما بمنطعف كبير، فيضطر فيكرام للسفر، وفي هذه الرحلة، يتعرض فيكرام للاختطاف، وعلى روني أن يتصدى ﻷي أحد يحاول إيذاء شقيقه.</p>
+              </div>
+              <div class="movie-title">
+                <h3>فيلم المتمرد 3 Baaghi 3 2020 مترجم اون لاين</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>14741</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2020</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                </li>
+                <li>DVD Sc</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div>
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>6.6</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">تدور أحداث مسلسل ابنة السفير حول قصة حب مستحيلة بين (ناري) ابنة السفير و (سنجار) ابن عامل بسيط في موغالا. (ناري) و (سنجار) وقعا في حب بعضهما منذ اللحظة التي تقابلا فيها عندما كانا طفلان. العاشقان يدركان انهما لن يستطيعا الاجتماع بسبب مواضيع عائلية فيقرران الهرب وترك كل شيء خلفهما. في اليوم الذي سيهربان فيه يحصل شيء غامض وتختفي (ناري) بشكل مفاجئ! بعد سنوات ستتغير حياة (سانجار) وعندما يستعد للزواج من فتاة اخرى تظهر (ناري) من جديد أمامه ومعها اسرار الماضي.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مسلسل ابنة السفير مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>18306</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2019</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>دراما</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>7.1</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">يعود (بيرنت) - الذى أصبح مفتشا- للعمل مع زميله القديم (لوري) - الذي يعاني من اكتئاب مرحلة منتصف العمر، بعد ان يقوم مرتزق ألباني برصد جائزة مالية لمن يأتي برأس الثنائي انتقاما لأخيه الذي قتل علي يديهما.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مشاهدة فيلم Bad Boys for Life 2020 مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>58319</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2019</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اثارة</span>
+                  <span>اكشن</span>
+                  <span>كوميديا</span>
+                </li>
+                <li>720p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <div class="series-number">
+                    <strong>150</strong>
+                    <span>حلقة</span>
+                  </div>
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>5.5</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">“بوروتو” الجيل الجديد، والنينجا الصغار الجدد، فتانا الصغير “أوزوماكي بوروتو” ذي الشعر الأصفر كأبيه النينجا العظيم، ذاك الصغير بعنصريْ الريح والبرق وبعيون غامضة لا يدري كنهها بعد، والذي ورث ملامح أبيه “ناروتو” وحماسه وتهوّره، وبعض خجل وصفات أمه “هيوجا هيناتا”. “بوروتو” الأنمي الذي لم يتحمس له أحد وقيل أنّه سيكون مجرد مط وتطويل، لكنه فاجأ الجميع بأحداثه الساخنة منذ البداية، فبدايته حتى وإن بدت أكثر لطفًا و جمالًا من بدايات “ناروتو” نفسه، إلاّ أنّنا من الدقيقة الأولى نرى “بوروتو” يواجه “كاواكي”، تمامًا كما هو الحال في المانجا، مما يُظهر لنا لمحةً عما سيأتي في هذه الملحمة فيما بعد.</p>
+              </div>
+              <div class="movie-title">
+                <h3>انمي Boruto Naruto مترجم اون لاين</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>44047</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2020</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>كرتون</span>
+                  <span>اكشن</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>5.7</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">يبعث راي جاريسون بأعجوبة من الموت من خلال إحدى تقنيات النانو تكنولوجي، لكنه يعاني في المقابل من فقدان تام للذاكرة، ويحاول راي التواصل من جديد مع شخصيته الحقيقية التي كان عليها في الماضي بينما يكتشف أنه قد بات في حد ذاته بمثابة سلاح فتاك.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مشاهدة فيلم Bloodshot 2020 مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>628492</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2020</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                  <span>دراما</span>
+                  <span>خيال علمى</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <div class="series-number">
+                    <strong>2</strong>
+                    <span>حلقة</span>
+                  </div>
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>7.2</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">ضمن أحداث حقيقية هزت ضمير العالم في فترة عاصفة من التاريخ السعودي، يجد خالد الطيان هذه المرة نفسه في مأزق لا يخطر على البال.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مشاهدة مسلسل العاصوف موسم 2 حلقة 30</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>16972</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2019</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>رومانسى</span>
+                  <span>دراما</span>
+                  <span>عائلى</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>8.0</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">رزوان "رضوان" خان مسلم هندى يعانى من مرض التوحد "متلازمة أسبرجر". بعد وفاة أمه ينتقل الى الولايات المتحدة ليقيم عند اخيه زاكر. هناك يتعرف على فتاة هندوسية تدعى مانديرا مطلقة و لديها ابن من زواج سابق ليقع في غرامها</p>
+              </div>
+              <div class="movie-title">
+                <h3>فيلم My Name Is Khan 2010 مترجم اون لاين</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>714128</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2010</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اثارة</span>
+                  <span>دراما</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>720p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>6.1</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">في سعي جاد للنجاح في عالم الفنّ، يفكّر ممثل شابّ طموح في التخلّي عن المقهى الإيراني المحبوب من أهل المدينة والذي تديره عائلته لأجيال.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مشاهدة فيلم Maska 2020 مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>18560</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2019</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>كوميديا</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <div class="series-number">
+                    <strong>20</strong>
+                    <span>حلقة</span>
+                  </div>
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>8.2</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">جراح شاب مصاب بالتوحد ومتلازمة الموهوب يتم تعينيه في مستشفى كبير رغم عدم قدرته على التواصل مع باقي الأشخاص بشكل طبيعي فهل يتمكن فعلا من انقاذ حياة المرضى؟</p>
+              </div>
+              <div class="movie-title">
+                <h3>مسلسل The Good Doctor مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>12861</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2017</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                  <span>فانتازيا</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <div class="series-number">
+                    <strong>929</strong>
+                    <span>حلقة</span>
+                  </div>
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>8.7</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">يبدأ لوفي قبعة القش رحلته في البحار مع اصدقائه ليحقق حلمه وهو ان يكون ملك القراصنة ومن هناك تبدأ المشاكل والصراعات القوية تمنعه من التقدم الى الامام وهل سيحقق حلمه ؟</p>
+              </div>
+              <div class="movie-title">
+                <h3>إنمي One Piece مترجم اون لاين</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>9583</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2020</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                  <span>فانتازيا</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>7.1</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">دور أحداث الفيلم منذ زمن قديم في مملكة اسكتلندية عن الأميرة ” ميريدا ” التي تتحكم والدتها الملكة ” إلينور ” في كل ما تفعله ،فتريد الأميرة أن تغيّر مصيرها فيعود هذا بالمشاكل على المملكة بأسرها .</p>
+              </div>
+              <div class="movie-title">
+                <h3>فيلم Brave 2012 مدبلج اون لاين</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>2861</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2012</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اكشن</span>
+                  <span>فانتازيا</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" class="card cover shadow trans">
+              <div class="images">
+                <div class="image-one">
+                  <!-- <div class="series-number">
+                    <strong>15</strong>
+                    <span>حلقة</span>
+                  </div> -->
+                </div>
+                <div class="image-two">
+                  <div class="mdb-rating">
+                    <h4>6.8</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="back-image"></div>
+              <div class="movie-story">
+                <p class="text-right">يتناول العمل قصة كلب يعيش في البقعة الأخيرة التي تدب فيها الحياة على الأرض، وبينما يعاني من سوء المعاملة والوحدة الشديدة، يقابل رجل ليذهب معه في مغامرة وتنشأ علاقة بينما تغير حياتهما.</p>
+              </div>
+              <div class="movie-title">
+                <h3>مشاهدة فيلم The Call of the Wild 2020 مترجم</h3>
+              </div>
+              <ul class="data-view">
+                <li class="views d-flex justify-content-around align-items-center rounded">
+                  <ion-icon class="eye" name="eye-outline"></ion-icon>
+                  <span>27169</span>
+                </li>
+                <li>
+                  <span>سنة الإنتاج : </span>
+                  <span>2020</span>
+                </li>
+              </ul>
+              <ul class="top-info">
+                <li class="rounded">
+                  <span>اثارة</span>
+                  <span>عائلى</span>
+                  <span>مغامرات</span>
+                </li>
+                <li>1080p HD</li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Movies Cards -->
+
+    <!-- Start Pagination -->
+
+    <div class="pagination-parent mt-5 mb-5">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination d-flex justify-content-center align-items-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link active" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- End Pagination -->
+
+    <!-- Start Footer -->
+
+    <footer>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="copy-right text-center text-lg-right">
+              <p>جميع الحقوق محفوظة <a href="#" class="website-name">الشاشة &copy;</a> 2020</p>
+            </div>
+          </div>
+          <div class="col-md-6  col-lg-4">
+            <ul class="social-icons text-lg-center d-flex justify-content-between">
+              <li class="aicon">
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="aicon">
+                <a href="#">
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="aicon">
+                <a href="#">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="aicon">
+                <a href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-4 text-md-center mt-md-2 mr-lg-0">
+            <div class="designer text-center text-lg-left">
+              <p>تصميم : <a href="#" class="designer-name">Mohammed Ahmed</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

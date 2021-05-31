@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Movies Website"/>
+        <title>Movies Page AL-ShaSha Movie Website</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/page-movies.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap">
+    </head>
+    <body>
+
+        <!-- Start Loading -->
+
+        <div class="loader">
+            <div class="sk-cube-grid">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+            </div>
+        </div>
+  
+        <!-- End Loading -->
+
+        <!-- Start Navbar -->
+
+        <nav class="navbar navbar-dark mynavbar bg-dark mysticknavbar fixed-top">
+            <div class="container">
+            <a class="navbar-brand" href="#">
+                <h2 class="h1 brand-text">الشاشة</h2>
+                <img src="img/logo/tv.png" class="logo" height="50" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon class="btn-bar" name="stats-chart-outline"></ion-icon>
+            </button>
+            <div class="overlay-dark">
+                <div class="colse-btn trans">
+                <ion-icon class="close-icon" name="close-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse navbar-side" id="myNav">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link trans" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    افلام
+                    </a>
+                    <div class="dropdown-menu shadow rounded" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">افلام عربي</a>
+                    <a class="dropdown-item" href="#">افلام اجنبى</a>
+                    <a class="dropdown-item" href="#">افلام انيميشن</a>
+                    <a class="dropdown-item" href="#">افلام اسيوية</a>
+                    <a class="dropdown-item" href="#">افلام هندى</a>
+                    <a class="dropdown-item" href="#">افلام كلاسيكيه</a>
+                    <a class="dropdown-item" href="#">سلاسل الأفلام</a>
+                    <a class="dropdown-item" href="#">افلام تركية</a>
+                    <a class="dropdown-item" href="#">افلام مدبلجة</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle trans" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    افلام كرتون
+                    </a>
+                    <div class="dropdown-menu shadow rounded" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">افلام مدبلج</a>
+                    <a class="dropdown-item" href="#">افلام مترجمة</a>
+                    <a class="dropdown-item" href="#">كرتون mbc 3</a>
+                    <a class="dropdown-item" href="#">كرتون سبيس تون</a>
+                    <a class="dropdown-item" href="#">اغاني كرتون</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle trans" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    مسلسلات
+                    </a>
+                    <div class="dropdown-menu shadow rounded" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">مسلسلات اجنبي</a>
+                    <a class="dropdown-item" href="#">مسلسلات تركيه</a>
+                    <a class="dropdown-item" href="#">مسلسلات عربيه</a>
+                    <a class="dropdown-item" href="#">مسلسلات كرتون</a>
+                    <a class="dropdown-item" href="#">مسلسلات مدبلجة</a>
+                    <a class="dropdown-item" href="#">مسلسلات كوريه</a>
+                    <a class="dropdown-item" href="#">مسلسلات رمضان</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link trans" href="#">مسرحيات عربيه</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link trans" href="#">اقسام اخرى</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link trans" href="#">اعلن معنا</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link trans" href="#">اتصل بنا</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <!-- End Navbar -->
+
+        <!-- Start Movies Information -->
+
+        <div class="movie-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="img-side">
+                            <div class="back-img"></div>
+                            <div class="front-img rounded"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="movie-details">
+                            <div class="story text-right">
+                                <h2>القصة : </h2>
+                                <p class="lead">يعود (بيرنت) الذي أصبح مفتشًا للعمل مع زميله القديم (لوري) الذي يعاني من اكتئاب مرحلة منتصف العمر، بعد أن رصد مرتزق ألباني جائزة مالية لمن يأتي برأس الثنائي انتقامًا لأخيه الذي قتل على يديهما.
+                                </p>
+                            </div>
+                            <div class="info mt-5">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="categories list-unstyled text-right">
+                                            <li class="shadow d-flex align-items-center mb-3">
+                                                <span class="icons"><ion-icon class="icon" name="list-outline"></ion-icon></span>
+                                                <span class="text d-flex align-items-center pr-2">التصنيف : افلام اجنبى</span>
+                                            </li>
+                                            <li class="shadow d-flex align-items-center mb-3">
+                                                <span class="icons"><ion-icon class="icon" name="language-outline"></ion-icon></span>
+                                                <span class="text d-flex align-items-center pr-2"> اللغة : English</span>
+                                            </li>
+                                            <li class="shadow d-flex align-items-center mb-3">
+                                                <span class="icons"><ion-icon class="icon" name="calendar-outline"></ion-icon></span>
+                                                <span class="text d-flex align-items-center pr-2"> سنة الإصدار : 2020</span>
+                                            </li>
+                                            <li class="shadow d-flex align-items-center mb-3">
+                                                <span class="icons"><ion-icon class="icon" name="tv-outline"></ion-icon></span>
+                                                <span class="text d-flex align-items-center pr-2">الجودة : RluRay</span>
+                                            </li>
+                                            <li class="shadow d-flex align-items-center mb-3">
+                                                <span class="icons"><ion-icon class="icon" name="time-outline"></ion-icon></span>
+                                                <span class="text d-flex align-items-center pr-2">مدة العرض : 133 دقيقة </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="actors">
+                                            <div class="actor d-flex align-items-center mb-2">
+                                                <div class="img">
+                                                    <img class="img-fluid" src="img/actors-card/a1.jpg" alt="">
+                                                </div>
+                                                <div class="name text-right">
+                                                    <h4 class="mt-4 text-capitalize">will smith</h4>
+                                                    <span>الممثل الرئيسي</span>
+                                                </div>
+                                            </div>
+                                            <div class="actor d-flex align-items-center">
+                                                <div class="img">
+                                                    <img class="img-fluid" src="img/actors-card/a4.jpg" alt="">
+                                                </div>
+                                                <div class="name text-right">
+                                                    <h4 class="mt-4 text-capitalize">Adil El Arbi</h4>
+                                                    <span>المخرج</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Movies Information -->
+
+        <!-- Start Rating -->
+
+        <div class="rating">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="imdb-rating">
+                            <div class="mdb">
+                                <span class="number">5.0</span>
+                                <span class="text">IMBb</span>
+                            </div>
+                            <div class="reflect">
+                                <span class="number">5.0</span>
+                                <span class="text">IMBb</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="trailer-faces">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <ul class="faces d-flex align-items-center list-unstyled">
+                                        <li data-toggle="tooltip" data-placement="right" title="أكثر من رئع">
+                                            <a href="#"><img class="img-fluid" src="img/emoji-face/a1.png" alt=""></a>
+                                          </li>
+                                          <li data-toggle="tooltip" data-placement="top" title="أحببته">
+                                            <a href="#"><img class="img-fluid" src="img/emoji-face/a2.png" alt=""></a>
+                                          </li>
+                                          <li data-toggle="tooltip" data-placement="top" title="متوسط">
+                                            <a href="#"><img class="img-fluid" src="img/emoji-face/a3.png" alt=""></a>
+                                          </li>
+                                          <li data-toggle="tooltip" data-placement="top" title="سيئ">
+                                            <a href="#"><img class="img-fluid" src="img/emoji-face/a4.png" alt=""></a>
+                                          </li>
+                                          <li data-toggle="tooltip" data-placement="left" title="لا أنصح بمشاهدته">
+                                            <a href="#"><img class="img-fluid" src="img/emoji-face/a5.png" alt=""></a>
+                                          </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5">
+                                    <a href="#" class="trailer-btn" data-trailer="https://www.youtube.com/embed/jKCj3XuPG8M">
+                                        <div class="btn-text d-flex align-items-center justify-content-center">
+                                            <ion-icon class="play" name="play-skip-forward-circle-outline"></ion-icon>
+                                            <span class="text">شاهد الإعلان</span>
+                                        </div>
+                                    </a>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Rating -->
+
+        <!-- Start Movie Type  -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="movie-type d-flex justify-content-center mt-5 mt-lg-0 flex-wrap">
+                        <li class="kind">النوع</li>
+                        <li><a href="#">اثارة</a></li>
+                        <li><a href="#">اكشن</a></li>
+                        <li><a href="#">جريمة</a></li>
+                        <li><a href="#">كوميدي</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Movie Type  -->
+
+        <!-- Start Screen  -->
+
+        <div class="screen mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="servier mt-sm-4 mt-lg-0">
+                            <h2 class="mb-4 text-center">إختر السيرفر :</h2>
+                            <div class="serviers">
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-2">
+                                    <ion-icon class="play-btn" name="play-circle-outline"></ion-icon>
+                                    <span class="text-capitalize">Talze</span>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-2 active">
+                                    <ion-icon class="play-btn" name="play-circle-outline"></ion-icon>
+                                    <span class="text-capitalize">Vidbm</span>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-2">
+                                    <ion-icon class="play-btn" name="play-circle-outline"></ion-icon>
+                                    <span class="text-capitalize">Thevideobee</span>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-2">
+                                    <ion-icon class="play-btn" name="play-circle-outline"></ion-icon>
+                                    <span class="text-capitalize">Streamango</span>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-2">
+                                    <ion-icon class="play-btn" name="play-circle-outline"></ion-icon>
+                                    <span class="text-capitalize">Onlystream</span>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-2">
+                                    <ion-icon class="play-btn" name="play-circle-outline"></ion-icon>
+                                    <span class="text-capitalize">Jawclioud</span>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-2">
+                                    <ion-icon class="play-btn" name="play-circle-outline"></ion-icon>
+                                    <span class="text-capitalize">Streamty</span>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-2">
+                                    <ion-icon class="play-btn" name="play-circle-outline"></ion-icon>
+                                    <span class="text-capitalize">Vidshare</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-6">
+                        <div class="video-screen mt-sm-4 mt-lg-0"></div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="download mt-sm-4 mt-lg-0">
+                            <h2 class="mb-4 text-center">روابط التحميل :</h2>
+                            <div class="download-links">
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-3">
+                                    <ion-icon class="download icon" name="cloud-download-outline"></ion-icon>
+                                    <div class="text text-center">
+                                        <h4 class="text-capitalize">Verystream</h4>
+                                        <span>اضغط هنا التحميل...</span>
+                                    </div>
+                                    <ion-icon class="chevron-left icon" name="chevron-back-outline"></ion-icon>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-3">
+                                    <ion-icon class="download icon" name="cloud-download-outline"></ion-icon>
+                                    <div class="text text-center">
+                                        <h4 class="text-capitalize">Openload</h4>
+                                        <span>اضغط هنا التحميل...</span>
+                                    </div>
+                                    <ion-icon class="chevron-left icon" name="chevron-back-outline"></ion-icon>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-3">
+                                    <ion-icon class="download icon" name="cloud-download-outline"></ion-icon>
+                                    <div class="text text-center">
+                                        <h4 class="text-capitalize">Vidoza</h4>
+                                        <span>اضغط هنا التحميل...</span>
+                                    </div>
+                                    <ion-icon class="chevron-left icon" name="chevron-back-outline"></ion-icon>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-3">
+                                    <ion-icon class="download icon" name="cloud-download-outline"></ion-icon>
+                                    <div class="text text-center">
+                                        <h4 class="text-capitalize">Uptobox</h4>
+                                        <span>اضغط هنا التحميل...</span>
+                                    </div>
+                                    <ion-icon class="chevron-left icon" name="chevron-back-outline"></ion-icon>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-3">
+                                    <ion-icon class="download icon" name="cloud-download-outline"></ion-icon>
+                                    <div class="text text-center">
+                                        <h4 class="text-capitalize">Nitrofiare</h4>
+                                        <span>اضغط هنا التحميل...</span>
+                                    </div>
+                                    <ion-icon class="chevron-left icon" name="chevron-back-outline"></ion-icon>
+                                </a>
+                                <a href="#" class="d-flex justify-content-between align-items-center mb-3">
+                                    <ion-icon class="download icon" name="cloud-download-outline"></ion-icon>
+                                    <div class="text text-center">
+                                        <h4 class="text-capitalize">Filerio</h4>
+                                        <span>اضغط هنا التحميل...</span>
+                                    </div>
+                                    <ion-icon class="chevron-left icon" name="chevron-back-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Screen  -->
+
+        <!-- Start Footer -->
+
+        <footer>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-lg-4">
+                    <div class="copy-right text-center text-lg-right">
+                        <p>جميع الحقوق محفوظة <a href="#" class="website-name">الشاشة &copy;</a> 2020</p>
+                    </div>
+                    </div>
+                    <div class="col-md-6  col-lg-4">
+                    <ul class="social-icons text-lg-center d-flex justify-content-between">
+                        <li class="aicon">
+                        <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        </li>
+                        <li class="aicon">
+                        <a href="#">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </a>
+                        </li>
+                        <li class="aicon">
+                        <a href="#">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        </li>
+                        <li class="aicon">
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="col-md-12 col-lg-4 text-md-center mt-md-2 mr-lg-0">
+                    <div class="designer text-center text-lg-left">
+                        <p>تصميم : <a href="#" class="designer-name">Mohammed Ahmed</a></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+  
+        <!-- End Footer -->
+
+
+        <!-- Start Popup  -->
+
+        <div class="popup">
+            <div class="window-box rounded">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="close-btn-popup rounded trans" title="إغلاق">
+                <ion-icon class="close-sharp" name="close-sharp"></ion-icon>
+            </div>
+            </div>
+        </div>
+    
+        <!-- End Popup  -->
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        <script src="js/page-movies-script.js"></script>
+    </body>
+</html>
